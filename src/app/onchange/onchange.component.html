@@ -1,0 +1,36 @@
+<h2>ONCHANGE COMPONENT with onPush strategy</h2>
+<dl>
+  <dt>Subject results:</dt>
+  <dd>{{ subjectResult | json }}</dd>
+</dl>
+
+
+<div style="background-color:cornflowerblue">
+  <dl>
+    <dt>Object:</dt>
+    <dd>{{ object | json }}</dd>
+  </dl>
+  <button (click)="onClickRecreateObject()">Recreate object in component</button>
+  <button (click)="onClickChangeObjectProperty()">Modify object property in component</button>
+</div>
+
+<div style="background-color:cornflowerblue">
+  <dl>
+    <dt>String:</dt>
+    <dd>{{ string }}</dd>
+    <dt>Number:</dt>
+    <dd>{{ number }}</dd>
+  </dl>
+  <button (click)="onClickChangeNumber()">Modify number in component</button>
+  <button (click)="onClickChangeString()">Modify string in component</button>
+</div>
+
+<div style="background-color:cornflowerblue">
+  <dl>
+    <dt>Array:</dt>
+    <dd>{{ array | json }}</dd>
+  </dl>
+  <button (click)="onClickChangeArray()">Push into array in component</button>
+  <button (click)="onClickRecreateArray()">Recreate array in component</button>
+</div>
+<hr/>
